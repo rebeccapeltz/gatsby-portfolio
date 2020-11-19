@@ -179,7 +179,7 @@ p {
   width: 5rem;
   height: 0.25rem;
   margin-bottom: 1.25rem;
-  background: var(--clr-primary-5);
+  background: var(--clr-blanched-almond-10);
   margin-left: auto;
   margin-right: auto;
 }
@@ -522,7 +522,7 @@ Services
   color: var(--clr-primary-9);
 }
 .service:hover .underline {
-  background: var(--clr-primary-9);
+  background: var(--clr-blanched-almond-10);
 }
 @media screen and (min-width: 676px) {
   .services-center {
