@@ -47,6 +47,11 @@ Variables
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
   --fixed-width: 700px;
+  /* https://www.w3schools.com/colors/colors_picker.asp?color=00bfff */
+  --clr-blanched-almond: hsl(36, 100%, 90%);
+  --clr-blanched-almond-4: hsl(36, 100%, 70%);
+  --clr-blanched-almond-7: hsl(36, 100%, 35%);
+  --clr-blanched-almond-10: hsl(36, 100%, 35%);
 }
 /*
 =============== 
@@ -63,7 +68,7 @@ Global Styles
 }
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-white);
+  background: var(lr-blanched-almond);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -129,8 +134,8 @@ p {
 
 .btn {
   text-transform: uppercase;
-  background: var(--clr-primary-5);
-  color: var(--clr-primary-9);
+  background: var(--clr-blanched-almond-4);
+  color: var(--blanched-almond-7);
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
   display: inline-block;
@@ -144,8 +149,8 @@ p {
   border-radius: var(--radius);
 }
 .btn:hover {
-  color: var(--clr-primary-1);
-  background: var(--clr-primary-8);
+  color: white;
+  background: var(--clr-blanched-almond-10);
 }
 .center-btn {
   display: block;
@@ -410,7 +415,7 @@ Hero
   margin-top: -5rem;
   padding-top: 5rem;
   height: 100vh;
-  background: var(--clr-primary-10);
+  background: var(--clr-blanched-almond);
   position: relative;
 }
 
@@ -425,7 +430,7 @@ Hero
   margin-left: 0;
 }
 .hero-info {
-  background: var(--clr-primary-10);
+  background: var(lr-blanched-almond);
 }
 .hero-img {
   display: none;
@@ -448,7 +453,7 @@ Hero
     left: 65%;
     right: 0;
     bottom: 0;
-    background: var(--clr-white);
+    background: var(clr-blanched-almond);
   }
   .hero-center {
     grid-template-columns: repeat(12, 1fr);
@@ -464,7 +469,7 @@ Hero
   .hero-img {
     display: block;
     grid-row: 1/1;
-    grid-column: 6/-1;
+    grid-column: 7/-1;
   }
 }
 @media screen and (min-width: 1170px) {
@@ -487,7 +492,7 @@ Services
 ===============
 */
 .service {
-  background: var(--clr-white);
+  background: var(lr-blanched-almond);
   padding: 3rem 1.5rem;
   margin-bottom: 2rem;
   border-radius: var(--radius);
@@ -1052,4 +1057,5 @@ Blog Template
 .nav-header {
   background-color:#f4f4f4;
   padding: 0 .5rem;
+  border-radius: 4rem;
 }
