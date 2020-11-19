@@ -1,11 +1,11 @@
 import React from "react"
 import Image from "gatsby-image"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
 import SocialLinks from "../constants/socialLinks"
 const query = graphql`
   {
-    file(relativePath: { eq: "hero-img.png" }) {
+    file(relativePath: { eq: "pexels-headshot.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
@@ -27,11 +27,11 @@ const Hero = () => {
         <article className="hero-info">
           <div>
             <div className="underline"></div>
-            <h1>i'm john</h1>
-            <h4>freelance web and mobile UI/UX Designer</h4>
-            <Link to="/contact" className="btn">
-              contact me
-            </Link>
+            <h1>Sasha Wolffe</h1>
+            <h4>freelance photography: image and video</h4>
+            <a target="_blank" className="btn" href="mailto:sasha@cats.com">
+              Contact
+            </a>
             <SocialLinks />
           </div>
         </article>
